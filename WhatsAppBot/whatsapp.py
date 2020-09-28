@@ -278,14 +278,14 @@ class WhatsApp:
             attach_btn.click()
 
             # Find attach file btn and send screenshot path to input
-            time.sleep(1)
+            time.sleepF(1)
             attach_img_btn = self.browser.find_element_by_xpath(attach_type_xpath)
 
             # TODO - might need to click on transportation mode if url doesn't work
             attach_img_btn.send_keys(picture_location)  # get current script path + img_path
             time.sleep(1)
             if caption:
-                caption_xpath = "/html/body/div[1]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/div/span/div/div[2]/div/div[3]/div[1]/div[2]"
+                caption_xpath = "/html/body/div[1]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/div[1]/span/div/div[2]/div/div[3]/div[1]/div[2]"
                 send_caption = self.browser.find_element_by_xpath(caption_xpath)
                 send_caption.send_keys(caption)
             send_btn = self.browser.find_element_by_xpath(send_file_xpath)
