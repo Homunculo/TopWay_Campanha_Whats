@@ -1,7 +1,8 @@
 credentials.json
 google_api_key
 chromedriver.exe
-
+documentos_enviar/
+session_SS.png
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
